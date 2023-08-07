@@ -1,4 +1,4 @@
-package lista1;
+package listaOperadores;
 
 public class Q1 {
     
