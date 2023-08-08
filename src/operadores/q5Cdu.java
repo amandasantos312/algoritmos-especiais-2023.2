@@ -3,7 +3,7 @@ package operadores;
 import java.util.Scanner;
 
 import java.lang.Math;
-
+//Leia um número inteiro (3 dígitos), calcule e escreva a soma de seus elementos (C + D + U).
 public class q5cdu {
 
     public static void main(String[] args) {

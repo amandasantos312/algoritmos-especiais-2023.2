@@ -3,7 +3,7 @@ package operadores;
 import java.util.Scanner;
 
 import java.lang.Math;
-
+//Leia um valor em minutos, calcule e escreva o equivalente em horas e minutos.
 public class q3minHMin {
     
     public static void main(String[] args) {

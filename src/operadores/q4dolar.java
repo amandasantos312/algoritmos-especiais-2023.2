@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia o valor do dólar e um valor em dólar, calcule e escreva o equivalente em real (R$).
 public class q4dolar {
     
     public static void main(String[] args) {

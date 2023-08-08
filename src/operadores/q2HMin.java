@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia um valor em horas e um valor em minutos, calcule e escreva o equivalente em minutos.
 public class q2hMin {
     
     public static void main(String[] args) {

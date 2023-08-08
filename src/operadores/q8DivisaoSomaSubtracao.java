@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia 2 números, calcule e escreva a divisão da soma pela subtração dos números lidos.
 public class q8divisaoSomaSubtracao {
     
     public static void main(String[] args) {

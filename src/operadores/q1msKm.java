@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia uma velocidade em m/s, calcule e escreva esta velocidade em km/h. (Vkm/h = Vm/s * 3.6)
 public class q1msKm {
     
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia 2 números (A, B) e escreva-os em ordem inversa (B, A).
 public class q9inverso {
     
     public static void main(String[] args) {
