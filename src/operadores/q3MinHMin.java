@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import java.lang.Math;
 
-public class q3mhMin {
+public class q3MinHMin {
     
     public static void main(String[] args) {
         //Entrada:
