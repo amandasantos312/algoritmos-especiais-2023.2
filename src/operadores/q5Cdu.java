@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import java.lang.Math;
 
-public class q5Cdu {
+public class q5cdu {
 
     public static void main(String[] args) {
         //Entrada:

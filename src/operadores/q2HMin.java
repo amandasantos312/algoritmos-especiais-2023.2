@@ -2,7 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 
-public class q2HMin {
+public class q2hMin {
     
     public static void main(String[] args) {
         //Entrada:

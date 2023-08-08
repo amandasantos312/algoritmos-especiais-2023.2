@@ -2,7 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 
-public class q6KmMs {
+public class q6kmMs {
 
     public static void main(String[] args) {
         //Entrada:

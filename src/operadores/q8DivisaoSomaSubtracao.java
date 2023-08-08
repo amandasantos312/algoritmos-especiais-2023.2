@@ -2,7 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 
-public class q8DivisaoSomaSubtracao {
+public class q8divisaoSomaSubtracao {
     
     public static void main(String[] args) {
         //Entrada:

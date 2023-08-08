@@ -2,7 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 
-public class q7SomaDiferenca {
+public class q7somaDiferenca {
     
     public static void main(String[] args) {
         //Entrada:
