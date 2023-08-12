@@ -1,7 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-
+//Leia uma temperatura em °C, calcule e escreva a equivalente em °F. (t°F = (9 * t°C + 160) / 5)
 public class q20celsiusFahrenheit {
 
     public static void main(String[] args) {
