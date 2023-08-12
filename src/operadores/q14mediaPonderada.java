@@ -8,7 +8,7 @@ public class q14mediaPonderada {
         
         Scanner input = new Scanner(System.in);
 
-        System.out.printf("%fNum1: ");
+        System.out.printf("%nNum1: ");
         double num1 = input.nextDouble();
 
         System.out.println("Peso1: ");

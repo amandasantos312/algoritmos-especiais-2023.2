@@ -11,7 +11,7 @@ public class q2hMin {
         System.out.printf("%nHoras: ");
         int horas = input.nextInt();
 
-        System.out.printf("Minutos: ");
+        System.out.printf("%nMinutos: ");
         int min = input.nextInt();
 
         //Processamento:
