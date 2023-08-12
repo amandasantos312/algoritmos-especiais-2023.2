@@ -12,12 +12,14 @@ public class q11inverso3 {
         int num = input.nextInt();
 
         //Processamento:
-        double a = Math.floor(num / 100);
-        double b = Math.floor(num % 100 / 10);
-        double c = Math.floor(num % 10);
+        double c = Math.floor(num / 100);
+        double d = Math.floor(num % 100 / 10);
+        double u = Math.floor(num % 10);
+
+        double inverso = ((u * 100) + (d * 10) + (c * 1));
 
         //Saída:
-        System.out.printf("Inverso: %.0f %.0f %.0f", c, b, a);
+        System.out.printf("Inverso: %.0f", inverso);
 
         input.close();
     }
