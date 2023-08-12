@@ -2,7 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 
-public class q18comprimmentoCircunferencia {
+public class q18comprimentoCircunferencia {
     
     public static void main(String[] args) {
         
