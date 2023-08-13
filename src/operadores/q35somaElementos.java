@@ -16,14 +16,14 @@ public class q35somaElementos {
 
         double c = Math.floor(num % 1000 / 100);
 
-        double d = Math.floor(num % 100);
+        double d = Math.floor(num % 100 / 10);
 
         double u = Math.floor(num % 10);
 
         double soma = um + c + d + u;
 
         //Saída:
-        System.out.printf("Soma dos elementos: %f", soma);
+        System.out.printf("Soma dos elementos: %.0f", soma);
 
         input.close();
     }
