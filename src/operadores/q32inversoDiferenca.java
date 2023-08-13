@@ -9,7 +9,7 @@ public class q32inversoDiferenca {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Numero de 3 digitos: ");
-        int num = input.nextInt();
+        double num = input.nextDouble();
 
         //Processamento:
         double c = Math.floor(num / 100);

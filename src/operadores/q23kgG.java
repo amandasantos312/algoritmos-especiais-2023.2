@@ -16,5 +16,7 @@ public class q23kgG {
 
         //Saída:
         System.out.printf("G: %.1f", g);
+
+        input.close();
     }
 }

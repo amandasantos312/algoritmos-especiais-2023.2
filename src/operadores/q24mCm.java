@@ -14,5 +14,7 @@ public class q24mCm {
         double cm = m * 100;
 
         System.out.printf("Cm: %.1f", cm);
+
+        input.close();
     }
 }

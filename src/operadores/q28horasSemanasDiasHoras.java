@@ -1,8 +1,7 @@
 package operadores;
 
 import java.util.Scanner;
-//Leia um número inteiro de horas, calcule e escreva quantas semanas, quantos dias e quantas horas ele
-//corresponde.
+//Leia um número inteiro de horas, calcule e escreva quantas semanas, quantos dias e quantas horas ele corresponde.
 public class q28horasSemanasDiasHoras {
 
     public static void main(String[] args) {
@@ -21,5 +20,7 @@ public class q28horasSemanasDiasHoras {
         System.out.printf("Semanas: %.0f", semanas);
         System.out.printf("%nDias: %.0f", dias);
         System.out.printf("%nHoras: %.0f", h);
+
+        input.close();
     }
 }

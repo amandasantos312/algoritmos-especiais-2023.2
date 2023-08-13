@@ -19,5 +19,7 @@ public class q25mKmM {
         System.out.printf("Km: %.1f", km);
         System.out.printf("%nM: %.1f", m);
 
+        input.close();
+
     }
 }

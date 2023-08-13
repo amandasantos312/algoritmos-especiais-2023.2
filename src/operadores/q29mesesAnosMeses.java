@@ -18,5 +18,7 @@ public class q29mesesAnosMeses {
         //Saída:
         System.out.printf("Anos: %.0f", anos);
         System.out.printf("%nMeses: %.0f", m);
+
+        input.close();
     }
 }

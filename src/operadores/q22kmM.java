@@ -16,5 +16,7 @@ public class q22kmM {
 
         //Saída:
         System.out.printf("M: %.1f", m);
+
+        input.close();
     }
 }

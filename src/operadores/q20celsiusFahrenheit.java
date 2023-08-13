@@ -17,5 +17,6 @@ public class q20celsiusFahrenheit {
         //Saída:
         System.out.printf("Temperatura em Fahrenheit: %.1f", fahreheit);
 
+        input.close();
     }
 }

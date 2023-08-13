@@ -21,5 +21,7 @@ public class q27segundosHorasMinSeg {
         System.out.printf("Horas: %.0f", horas);
         System.out.printf("%nMinutos: %.0f", min);
         System.out.printf("%nSegundos: %.0f", s);
+
+        input.close();
     }
 }

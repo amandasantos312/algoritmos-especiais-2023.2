@@ -16,5 +16,7 @@ public class q26diasSemanasDias {
 
         System.out.printf("Semanas: %.0f", semanas);
         System.out.printf("%nDia(s): %.0f", d);
+
+        input.close();
     }
 }

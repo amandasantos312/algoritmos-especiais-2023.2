@@ -16,5 +16,7 @@ public class q21fahreheitCelsius {
 
         //Saída:
         System.out.printf("Temperatura em Celsius : %.1f", celsius);
+
+        input.close();
     }
 }

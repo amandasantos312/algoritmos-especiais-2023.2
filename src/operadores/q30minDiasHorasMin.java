@@ -21,5 +21,7 @@ public class q30minDiasHorasMin {
         System.out.printf("Dias: %.0f", dias);
         System.out.printf("%nHoras: %.0f", horas);
         System.out.printf("%nMinutos: %.0f", min);
+
+        input.close();
     }
 }

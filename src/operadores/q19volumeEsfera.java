@@ -18,5 +18,7 @@ public class q19volumeEsfera {
 
         //Saída:
         System.out.printf("Volume: %.2f", volume);
+
+        input.close();
     }
 }
