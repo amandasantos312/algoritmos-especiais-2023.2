@@ -1,3 +1,5 @@
 #Arquivos para ignorar:
 .idea
 *.iml
+.vscode
+bin
