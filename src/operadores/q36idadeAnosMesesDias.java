@@ -8,17 +8,20 @@ public class q36idadeAnosMesesDias {
         //Entrada:
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Idade: ");
-        double idade = input.nextDouble();
+        System.out.println("Idade em Anos: ");
+        int anos = input.nextInt();
 
         System.out.println("Meses: ");
-        double meses = input.nextDouble();
+        int meses = input.nextInt();
 
         System.out.println("Dias: ");
-        double dias = input.nextDouble();
+        int dias = input.nextInt();
+
+        //Processamento:
+        int d = anos * 365 + meses * 30 + dias;
 
         //Saída:
-        System.out.printf("");
+        System.out.printf("Dias Totais: %d", d);
 
         input.close();
     }

@@ -28,6 +28,6 @@ public class q38duasFracoes {
         int num3 = (den1*num2 + den2*num1);
 
         //Saída:
-        System.out.println("Nova fração: " + num3 + "/" + den3);
+        System.out.println("Nova fracao: " + num3 + "/" + den3);
     }
 }
