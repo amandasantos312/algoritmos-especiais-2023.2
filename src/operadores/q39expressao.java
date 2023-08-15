@@ -2,8 +2,7 @@ package operadores;
 
 import java.util.Scanner;
 /* Leia três números inteiros e positivos (A, B, C) e calcule a seguinte expressão:
-* D = R + S / 2 onde R = (A + B)² e S = (B + C)²
-*/
+* D = R + S / 2 onde R = (A + B)² e S = (B + C)² */
 public class q39expressao {
 
     public static void main(String[] args) {

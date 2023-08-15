@@ -3,8 +3,7 @@ package operadores;
 import java.util.Scanner;
 /* Calcule a quantidade de dinheiro gasta por um fumante.
 Dados de entrada: o número de anos que elefuma, o n° de cigarros fumados por dia e o preço de uma carteira
-(1 carteira tem 20 cigarros).
-*/
+(1 carteira tem 20 cigarros). */
 public class q40fumante {
 
     public static void main(String[] args) {
