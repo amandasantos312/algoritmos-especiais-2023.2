@@ -11,11 +11,26 @@ notas de acordo com o critério da distribuição ótima. */
 public class q45saquesNotas {
 
     public static void main(String[] args) {
-
+        //Entrada:
         Scanner input = new Scanner(System.in);
 
+        System.out.println("Valor de saque: ");
+        double valor = input.nextDouble();
 
+        //Processamento:
+        double cinquenta = Math.floor(valor / 50);
 
+        double dez = Math.floor(valor % 50 / 10);
+
+        double cinco = Math.floor(valor % 10 / 5);
+
+        double um = Math.floor(valor % 5);
+
+        //Saída:
+        System.out.printf("Notas de R$ 50: %.0f", cinquenta);
+        System.out.printf("%nNotas de R$ 10: %.0f", dez);
+        System.out.printf("%nNotas de R$ 5: %.0f", cinco);
+        System.out.printf("%nNotas de R$ 1: %.0f", um);
 
         input.close();
     }

@@ -21,7 +21,7 @@ public class q42distanciaPontos {
         String[] p2 = ponto2.split(" ");
 
         double x1 = Double.parseDouble(p1[0]);
-        double y1 = Double.parseDouble(p1[0]);
+        double y1 = Double.parseDouble(p1[1]);
 
         double x2 = Double.parseDouble(p2[0]);
         double y2 = Double.parseDouble(p2[1]);

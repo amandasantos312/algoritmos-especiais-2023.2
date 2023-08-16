@@ -10,11 +10,22 @@ de acordo com as regras acima. */
 public class q46entradaParcelas {
 
     public static void main(String[] args) {
-
+        //Entrada:
         Scanner input = new Scanner(System.in);
 
+        System.out.println("Valor: ");
+        double valor_compra = input.nextDouble();
 
+        //Processamento:
+        double resto = valor_compra % 3;
 
+        double parcelas = (valor_compra - resto) / 3;
+
+        double entrada = parcelas + resto;
+
+        //Saída:
+        System.out.printf("Entrada: %.2f", entrada);
+        System.out.printf("%n2 Prestacoes de  %.2f", parcelas);
 
         input.close();
     }
