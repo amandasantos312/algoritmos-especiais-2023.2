@@ -22,5 +22,7 @@ public class q37diasAnosMesesDias {
         System.out.printf("Anos: %.0f", anos);
         System.out.printf("%nMeses: %.0f", meses);
         System.out.printf("%nDias: %.0f", d);
+
+        input.close();
     }
 }

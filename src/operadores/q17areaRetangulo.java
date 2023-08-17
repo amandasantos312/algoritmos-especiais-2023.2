@@ -19,5 +19,7 @@ public class q17areaRetangulo {
 
         //Saída:
         System.out.printf("Area: %.2f", area);
+
+        input.close();
     }
 }

@@ -29,5 +29,7 @@ public class q38duasFracoes {
 
         //Saída:
         System.out.println("Nova fracao: " + num3 + "/" + den3);
+
+        input.close();
     }
 }
