@@ -1,4 +1,4 @@
-#Arquivos para ignorar:
+#Arquivos e pastas para ignorar:
 .idea
 *.iml
 .vscode
