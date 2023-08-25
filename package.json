@@ -1,0 +1,16 @@
+{
+  "name": "listas",
+  "version": "1.0.0",
+  "description": "Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depois passei a usar o VSCode para javascript e pyhthon, por isso a pasta **.vscode** e **bin**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
