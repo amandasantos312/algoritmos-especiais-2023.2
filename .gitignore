@@ -3,4 +3,3 @@
 *.iml
 .vscode
 bin
-node_modules
