@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1-verifica-numeros-iguais</title>
+
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        form {
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h2>
+            Q1 - Leia 3 (três) números, verifique e escreva quantos números iguais existem entre os números.
+        </h2>
+
+        <form id="inputs" action="#">
+
+            <div>
+                <label for="">1° número:</label>
+                <input id="cx-num1" type="number">
+            </div>
+
+            <div>
+                <label for="">2° número:</label>
+                <input id="cx-num2" type="number">
+            </div>
+                
+            <div>
+                <label for="">3° número:</label>
+                <input id="cx-num3" type="number">
+            </div>
+             
+            <div id="botoes"> 
+                <input id="btn-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
+                <input type="reset" value="Limpar Números">
+            </div>
+
+        </form>
+        
+    </header>
+
+    <script>
+        function botao_verificar() {
+            const cx_num1 = document.getElementById('cx-num1')
+            const cx_num2 = document.getElementById('cx-num2')
+            const cx_num3 = document.getElementById('cx-num3')
+
+            const num1 = Number(cx_num1.value)
+            const num2 = Number(cx_num2.value)
+            const num3 = Number(cx_num3.value)
+
+            const numeros = verifica_numeros(num1, num2, num3)
+
+            const result = `\nExistem ${numeros} numeros iguais`
+
+            alert(result)
+        }
+
+        function verifica_numeros(n1, n2, n3) {
+            if (n1 === n2 && n2 === n3) {
+                return '3'
+            } else if (n1 == n2 || n1 === n3 || n2 === n3) {
+                return '2'
+            } else {
+                return '0'
+            }
+        }
+    </script>
+</body>
+</html>
