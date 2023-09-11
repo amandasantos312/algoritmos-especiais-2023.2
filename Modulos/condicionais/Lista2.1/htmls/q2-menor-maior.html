@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2-menor-maior</title>
+
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        form {
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h2>
+            Q2 - Leia 2 (dois) números, verifique e escreva o menor e o maior entre os números lidos.
+        </h2>
+        <form id="inputs" action="#">
+
+            <div>
+                <label for="">1° número:</label>
+                <input id="cx-num1" type="number">
+            </div>
+
+            <div>
+                <label for="">2° número:</label>
+                <input id="cx-num2" type="number">
+            </div>
+
+            <div>
+                <input id="btn-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
+                <input type="reset" value="Limpar Números">
+            </div>
+        </form>
+
+    </header>
+
+
+    <script>
+        function botao_verificar() {
+            const cx_num1 = document.getElementById('cx-num1')
+            const cx_num2 = document.getElementById('cx-num2')
+
+            const num1 = Number(cx_num1.value)
+            const num2 = Number(cx_num2.value)
+
+            const result = (verifica_menor_maior(num1, num2))
+
+            alert(result)
+        }
+
+        function verifica_menor_maior(n1, n2) {
+            if (n1 > n2) {
+                return `Menor: ${n2} e Maior: ${n1}`
+            } else {
+                return `Menor: ${n1} e Maior: ${n2}`
+            }
+        }
+    </script>
+</body>
+</html>
