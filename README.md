@@ -1,6 +1,6 @@
 ## Getting Started
 
-Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depois passei a usar o VSCode para javascript e pyhthon.
+Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depois passei a usar o VSCode para javascript e python.
 
 ## Folder Structure
 
