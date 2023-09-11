@@ -3,12 +3,12 @@ import { question } from "readline-sync"
 function main() {
     const num = question('\nNumero de 2 digitos: ').split(' ').map(Number)
 
-    const dez_uni = verifica_dez_uni(num)
+    const dez_uni = verificar_dez_uni(num)
 
     console.log(dez_uni)
 }
 
-function verifica_dez_uni(num) {
+function verificar_dez_uni(num) {
     const dez = Math.floor(num / 10)
     const uni = num % 10
 

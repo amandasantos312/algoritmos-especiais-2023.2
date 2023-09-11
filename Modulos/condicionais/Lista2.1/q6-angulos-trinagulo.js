@@ -7,7 +7,7 @@ function main() {
 
     if(eh_triangulo(ang1, ang2, ang3)) {
         console.log('\nSIM, forma um triângulo!')
-        const tipo = verifica_tipo(ang1, ang2, ang3)
+        const tipo = verificar_tipo(ang1, ang2, ang3)
         console.log(`\nÉ do tipo ${tipo}!`)
     } else {
         console.log('\nNÃO forma um triângulo!')
@@ -18,7 +18,7 @@ function eh_triangulo(a1, a2, a3) {
     return a1 != 0 && a2 != 0 && a3 != 0 && a1 + a2 + a3 === 180
 }
 
-function verifica_tipo(a1, a2, a3) {
+function verificar_tipo(a1, a2, a3) {
     if (eh_retangulo(a1, a2, a3)) {
         return 'Retangulo'
     } else if (eh_acutangulo(a1, a2, a3)) {
