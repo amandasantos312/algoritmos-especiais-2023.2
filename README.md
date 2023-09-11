@@ -1,6 +1,6 @@
 ## Getting Started
 
-Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depois passei a usar o VSCode para javascript e pyhthon, por isso a pasta **.vscode** e **bin**.
+Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depois passei a usar o VSCode para javascript e pyhthon.
 
 ## Folder Structure
 
@@ -10,3 +10,5 @@ O workspace contém as seguintes pastas de interesse:
 - `out`: contém os códigos **.class** da pasta **src**.
 
 ### VSCode:
+- `Módulos`: códigos a partir da listafábio2.
+- `node_modules`
