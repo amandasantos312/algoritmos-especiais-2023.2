@@ -16,7 +16,7 @@
 
         form {
             margin: 15px;
-            padding: 10px;
+            padding: 150px;
         }
     </style>
 
@@ -44,10 +44,8 @@
                 <input type="reset" value="Limpar Números">
             </div>
         </form>
-
     </header>
-
-
+    
     <script>
         function botao_verificar() {
             const cx_num1 = document.getElementById('cx-num1')
@@ -56,7 +54,7 @@
             const num1 = Number(cx_num1.value)
             const num2 = Number(cx_num2.value)
 
-            const result = (verifica_menor_maior(num1, num2))
+            const result = verifica_menor_maior(num1, num2)
 
             alert(result)
         }

@@ -4,16 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>q14-media</title>
+
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        form {
+            margin: 15px;
+            padding: 150px;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header>
+        <h2>
+            Q14 - Leia 5 (cinco) números inteiros, calcule a sua média e escreva os que são maiores que a média.
+        </h2>
+        <form id="inputs" action="#">
+            <div>
+                <label for="">1° número:</label>
+                <input id="cx-num1" type="number">
+            </div>
+
+            <div>
+                <label for="">2° número:</label>
+                <input id="cx-num2" type="number">
+            </div>
+
+            <div>
+                <label for="">3° número:</label>
+                <input id="cx-num3" type="number">
+            </div>
+
+            <div>
+                <label for="">4° número:</label>
+                <input id="cx-num4" type="number">
+            </div>
+
+            <div>
+                <label for="">5° número:</label>
+                <input id="cx-num5" type="number">
+            </div>
+
+            <div>
+                <input id="btn-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
+                <input type="reset" value="Limpar Números">
+            </div>
+        </form>
+    </header>
+
     <script>
         function botao_verificar() {
-            const cx_nota1 = document.getElementById('cx-nota1')
-            const cx_nota2 = document.getElementById('cx-nota2')
-            const cx_nota3 = document.getElementById('cx-nota3')
-            const cx_nota4 = document.getElementById('cx-nota4')
-            const cx_nota5 = document.getElementById('cx-nota5')
+            const cx_nota1 = document.getElementById('cx-num1')
+            const cx_nota2 = document.getElementById('cx-num2')
+            const cx_nota3 = document.getElementById('cx-num3')
+            const cx_nota4 = document.getElementById('cx-num4')
+            const cx_nota5 = document.getElementById('cx-num5')
 
             const nota1 = Number(cx_nota1.value)
             const nota2 = Number(cx_nota2.value)
@@ -23,9 +76,10 @@
 
             const media = calcular_media(nota1, nota2, nota3, nota4, nota5)
 
-            const notas_acima_media = verifica_notas_acima_media(media, nota1, nota2, nota3, nota4, nota5)
+            const result = verifica_notas_acima_media(media, nota1, nota2, nota3, nota4, nota5)
 
-            alert(media)
+            alert(`Média: ${media}
+            \nNotas acima da média: ${result}`)
         }
 
         function calcular_media(n1, n2, n3, n4, n5) {
