@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>q5-ordem-crescente</title>
 
     <style>
         h2 {
@@ -62,6 +62,24 @@
             const result = verifica_ordem(num1, num2, num3)
 
             alert(result)
+        }
+
+        function verifica_ordem(n1, n2, n3) {
+            if (n3 > n2 && n2 > n1) {
+                return (`Ordem: ${n1} / ${n2} / ${n3}`)
+            } else if (n2 > n3 && n3 > n1) {
+                return (`Ordem: ${n1} / ${n3} / ${n2}`)
+            } else if (n3 > n1 && n1 > n2) {
+                return (`Ordem: ${n2} / ${n1} / ${n3}`)
+            } else if (n1 > n3 && n3 > n2) {
+                return (`Ordem: ${n2} / ${n3} / ${n1}`)
+            } else if (n2 > n1 && n1 > n3) {
+                return (`Ordem: ${n3} / ${n1} / ${n2}`)
+            } else if (n1 > n2 && n2 > n3) {
+                return (`Ordem: ${n3} / ${n2} / ${n1}`)
+            } else {
+                return (`Ordem: ${n1} / ${n2} / ${n3}`)
+            }
         }
     </script>
 </body>
