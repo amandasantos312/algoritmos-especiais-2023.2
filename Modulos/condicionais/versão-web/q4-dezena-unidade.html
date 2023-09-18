@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q4-dezena-unidade</title>
+
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        form {
+            margin: 15px;
+            padding: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>
+            Q4 - Leia 1 (um) número de 2 (dois) dígitos, verifique e escreva se o algarismo da dezena é igual ou diferente do algarismo da unidade.
+        </h2>
+        <form id="inputs" action="#">
+            <div>
+                <label for="">Número de 2 dígitos:</label>
+                <input id="cx-num" type="number">
+            </div>
+            
+            <div>
+                <input id="btn-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
+                <input type="reset" value="Limpar Números">
+            </div>
+        </form>
+    </header>
+
+    <script>
+        function botao_verificar() {
+            const cx_num = document.getElementById('cx-num')
+
+            const num = Number(cx_num.value)
+
+            const result = verifica_dez_uni(num)
+
+            alert(result)
+        }
+
+        function verifica_dez_uni(num) {
+            const dez = Math.floor(num / 10)
+            const uni = num % 10
+
+            if (dez === uni) {
+                return 'Dezena é igual a Unidade'
+            } else {
+                return 'Dezena é diferente da Unidade'
+            }
+        }
+    </script>
+</body>
+</html>

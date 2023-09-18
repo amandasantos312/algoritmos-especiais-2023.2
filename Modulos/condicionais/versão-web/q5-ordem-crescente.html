@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>q3-maior-numero</title>
+    <title>Document</title>
 
     <style>
         h2 {
@@ -15,18 +15,18 @@
         }
 
         form {
-            margin: 150px;
-            padding: 15px;
+            margin: 15px;
+            padding: 150px;
         }
     </style>
 </head>
 
 <body>
     <header>
-       <h2>
-            Q3 - Leia 3 (três) números, verifique e escreva o maior entre os números lidos.
-       </h2> 
-       <form id="inputs" action="#">
+        <h2>
+            Q5 - Leia 3 (três) números e escreva-os em ordem crescente.
+        </h2>
+        <form id="inputs" action="#">
             <div>
                 <label for="">1° número:</label>
                 <input id="cx-num1" type="number">
@@ -46,9 +46,9 @@
                 <input id="btn-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
                 <input type="reset" value="Limpar Números">
             </div>
-       </form>
-    </header>
-    
+        </form>
+    </header>    
+
     <script>
         function botao_verificar() {
             const cx_num1 = document.getElementById('cx-num1')
@@ -59,19 +59,9 @@
             const num2 = Number(cx_num2.value)
             const num3 = Number(cx_num3.value)
 
-            const result = verifica_maior_numero(num1, num2, num3)
+            const result = verifica_ordem(num1, num2, num3)
 
-            alert(`${result} é o maior entre os valores!`)
-        }
-
-        function verifica_maior_numero(n1, n2, n3) {
-            if (n1 > n2 && n1 > n3) {
-                return n1
-            } else if (n2 > n1 && n2 > n3) {
-                return n2
-            } else {
-                return n3
-            }
+            alert(result)
         }
     </script>
 </body>
