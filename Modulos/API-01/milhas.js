@@ -5,6 +5,11 @@ function main() {
     const milhas = 1000
 
     const desconto = Number(question('Desconto(0 - 80): '))
+
+    if (desconto > 80){
+        return 'Desconto fora da faixa!'
+    }
+
     const bonus = Number(question('Bonus(0 - 300): '))
 
     const valor_com_desconto = calcula_desconto(valor_ref, desconto)
@@ -48,7 +53,7 @@ function verifica_classificacao(valor_final) {
     } else if (valor_final <= 17.5) {
         return 'BOA'
     } else if (valor_final <= 35) {
-        return 'RUINS'
+        return 'RUIM'
     } else {
         return 'PÉSSIMA'
     }
@@ -59,7 +64,7 @@ function verifica_recomendacao(classificacao) {
         return 'Compre!'
     } else if (classificacao === 'BOA') {
         return 'Ainda vale a pena, compre também caso tenha uma viagem próxima!'
-    } else if (classificacao === 'RUINS') {
+    } else if (classificacao === 'RUIM') {
         return 'Só compre se for pouca quantidade e urgentes!'
     } else {
         return 'Não compre! Avalie compra a passagem mesmo, e em "ultissimo caso" compre somente para completar um dado alvo.'
