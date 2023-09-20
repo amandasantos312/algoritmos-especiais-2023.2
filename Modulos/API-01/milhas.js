@@ -70,4 +70,5 @@ function verifica_recomendacao(classificacao) {
         return 'Não compre! Avalie compra a passagem mesmo, e em "ultissimo caso" compre somente para completar um dado alvo.'
     }
 }
+
 main()
