@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q6-ângulos-triângulos</title>
+
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        form {
+            margin: 15px;
+            padding: 120px;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Q6 - Leia 3 (três) números (cada número corresponde a um ângulo interno do triângulo), verifique e escreva 
+            se os 3 (três) números formam um triângulo (a soma dos ângulos internos é igual a 180º). 
+            Se formam, verifique se formam um triângulo acutângulo (3 ângulos < 90º), retângulo (1 ângulo = 90º) ou 
+            obtusângulo (1 ângulo > 90º). Não existe ângulo com tamanho 0º (zero grau). 
+        </h2>
+
+        <form id="inputs" action="#">
+            <div>
+                <label for="">1° número:</label>
+                <input id="cx-num1" type="number">
+            </div>
+
+            <div>
+                <label for="">2° número:</label>
+                <input id="cx-num2" type="number">
+            </div>
+
+            <div>
+                <label for="">3° número:</label>
+                <input id="cx-num3" type="number">
+            </div>
+
+            <div>
+                <input id="bt-verificar" onclick="botao_verificar()" type="submit" value="Verificar">
+                <input type="reset" value="Limpar Números">
+            </div>
+        </form>    
+    </header>
+
+    <script>
+        function botao_verificar() {
+            const cx_num1 = document.getElementById('cx-num1')
+            const cx_num2 = document.getElementById('cx-num2')
+            const cx_num3 = document.getElementById('cx-num3')
+
+            const num1 = Number(cx_num1.value)
+            const num2 = Number(cx_num2.value)
+            const num3 = Number(cx_num3.value)
+
+            if(eh_triangulo(num1, num2, num3)) {
+                alert('SIM, forma um triângulo!')
+                const tipo = verificar_tipo(num1, num2, num3)
+                alert(`É do tipo ${tipo}!`)
+            } else {
+                alert('NÃO forma um triângulo!')
+            }
+        }
+
+        function eh_triangulo(a1, a2, a3) {
+            return a1 != 0 && a2 != 0 && a3 != 0 && a1 + a2 + a3 === 180
+        }
+
+        function verificar_tipo(a1, a2, a3) {
+            if (eh_retangulo(a1, a2, a3)) {
+                return 'Retângulo'
+            } else if (eh_acutangulo(a1, a2, a3)) {
+                return 'Acutângulo'
+            } else {
+                return 'Obtusângulo'
+            }
+        }   
+
+        function eh_retangulo(a1, a2, a3) {
+            return a1 === 90 || a2 === 90 || a3 === 90
+        }
+
+        function eh_acutangulo(a1, a2, a3) {
+            return a1 < 90 && a2 < 90 && a3 < 90
+        }
+    </script>
+</body>
+</html>
