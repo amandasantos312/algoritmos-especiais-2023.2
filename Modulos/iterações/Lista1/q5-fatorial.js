@@ -1,7 +1,6 @@
 import { question } from "readline-sync"
 
-function main () {
-    
-}
+function main() {
 
+}
 main()
