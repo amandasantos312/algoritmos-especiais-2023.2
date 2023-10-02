@@ -1,7 +1,7 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main() {
-    const n = Number(question('Numero: '))
+    const n = get_number('Numero: ')
     let atual = 0
     let soma = 0
 
@@ -9,6 +9,6 @@ function main() {
         atual++
         soma = soma + atual
     }
-    console.log(`\nSoma dos números: ${soma}`)
+    print(`\nSoma dos números: ${soma}`)
 }
 main()

@@ -1,19 +1,19 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main() {
-    const n = Number(question('Qtd de numeros: '))
+    const n = get_number('Qtd de numeros: ')
 
     let i = 0
     let soma = 0
     let media = 0
 
     while (i < n) {
-        const n = Number(question('Numero: '))
+        const n = get_number('Numero: ')
         soma = soma + n
         i++
     }
     media = soma / n
-    console.log(`\nMédia: ${media}`)
+    print(`\nMédia: ${media}`)
 }
 
 main()

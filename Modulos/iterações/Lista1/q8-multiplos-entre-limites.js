@@ -1,17 +1,18 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main() {
-    const limite_inferior = Number(question('Limite Inferior: '))
-    const limite_superior = Number(question('Limite Superior: '))
-    const numero = Number(question('Numero: '))
+    const limite_inferior = get_number('Limite Inferior: ')
+    const limite_superior = get_number('Limite Superior: ')
+    const numero = get_number('Numero: ')
 
     let atual = limite_inferior
 
     while (atual <= limite_superior) {
         if (atual % numero === 0) {
-            console.log(atual)
+           print(atual)
         }
         atual++
     }
 }
+
 main()

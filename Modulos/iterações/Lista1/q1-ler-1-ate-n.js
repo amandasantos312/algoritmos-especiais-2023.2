@@ -1,11 +1,11 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main () {
-    const n = Number(question('N: '))
+    const n = get_number('N: ')
     let i = 1
 
     while (i <= n) {
-        console.log(i)
+        print(i)
         i++
     }
 }

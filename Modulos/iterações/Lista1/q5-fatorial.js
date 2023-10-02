@@ -1,7 +1,7 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main() {
-    let numero = Number(question('Numero: '))
+    let numero = get_number('Numero: ')
 
     if (numero === 0) return 1
 
@@ -11,7 +11,7 @@ function main() {
         fat = fat * numero
         numero --
     }
-    console.log(`Fatorial: ${fat}`)
+    print(`Fatorial: ${fat}`)
 }
 
 main()
