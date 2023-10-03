@@ -83,3 +83,34 @@ function tabuada_divisao(num) {
         dividendo = dividendo + num
     }
 }
+
+export function eh_primo(num) {
+    if (num <= 0) return false
+
+    let contador = contar_divisores(num)
+
+    return contador === 2
+}
+
+function contar_divisores(num) {
+    if (num <= 1) return 0
+
+    let contador = 0
+    let atual = 1
+
+    while (atual <= num) {
+        if (num % atual === 0) {
+            contador++
+        }
+        atual++
+    }
+    return contador
+}
+
+function eh_divisor(num, candidato) {
+    return num % candidato === 0
+}
+
+function eh_multiplo(num , candidato) {
+    return num % candidato === 0
+}
