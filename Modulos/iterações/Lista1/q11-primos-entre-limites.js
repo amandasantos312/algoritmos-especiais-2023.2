@@ -1,4 +1,4 @@
-import { get_number } from "../../utils/inputs"
+import { get_number, print } from "../../utils/inputs"
 
 function main() {
     const limite_inferior = get_number('Limite Inferior: ')
@@ -6,7 +6,18 @@ function main() {
 
     let atual = limite_inferior
 
-    
+    while (atual <= limite_superior) {
+        if (eh_primo(atual)) {
+            print(atual)
+        }
+        atual++
+    }
+}
+
+function eh_primo(num) {
+    if () {
+        
+    }
 }
 
 main()

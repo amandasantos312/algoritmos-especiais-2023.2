@@ -1,18 +1,18 @@
-import { question } from "readline-sync"
+import {get_number, print} from "../../utils/inputs.js"
 
 function main() {
-    const n = Number(question('Qtd de Numeros: '))
+    const n = get_number('Qtd de Numeros: ')
 
     let i = 0
     let maior = 0
 
     while (i < n) {
-        const numero = Number(question('Numero: '))
+        const numero = get_number('Numero: ')
         if (numero > maior) {
             maior = numero
         }
         i++
     }
-    console.log(`\nMaior: ${maior}`)
+    print(`\nMaior: ${maior}`)
 }
 main()
