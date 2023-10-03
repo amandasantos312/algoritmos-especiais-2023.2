@@ -20,4 +20,3 @@ export function get_positive_number(label) {
 export function print(texto) {
     console.log(texto)
 }
-
