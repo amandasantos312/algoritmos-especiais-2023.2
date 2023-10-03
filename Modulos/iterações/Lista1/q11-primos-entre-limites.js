@@ -1,4 +1,5 @@
-import { get_number, print } from "../../utils/inputs"
+import { get_number, print } from "../../utils/inputs.js"
+import {eh_primo} from "../../utils/math.js"
 
 function main() {
     const limite_inferior = get_number('Limite Inferior: ')
@@ -11,12 +12,6 @@ function main() {
             print(atual)
         }
         atual++
-    }
-}
-
-function eh_primo(num) {
-    if () {
-        
     }
 }
 
