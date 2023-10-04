@@ -84,6 +84,21 @@ function tabuada_divisao(num) {
     }
 }
 
+export const is_even = num => num % 2 === 0
+
+export function is_prime(num) {
+    let count_dividers = 0
+    let candidate = 1
+
+    while (candidate <= num) {
+        if (num % candidate === 0) {
+            count_dividers++
+        }
+        candidate++
+    }
+    return contar_divisores == 2  //Para ser primo o número deve ter somente dois divisores, o 1 e o próprio número
+}
+
 export function eh_primo(num) {
     if (num <= 0) return false
 
@@ -104,7 +119,7 @@ function contar_divisores(num) {
         }
         atual++
     }
-    return contador
+    return contador === 2
 }
 
 function eh_divisor(num, candidato) {
