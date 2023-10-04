@@ -1,4 +1,5 @@
 import {get_number} from "../../utils/inputs.js"
+import { eh_par } from "../../utils/math.js"
 
 function main() {
     const limite_inferior = get_number('Limite Inferior: ')
@@ -12,10 +13,6 @@ function main() {
         }
         atual++
     }
-}
-
-function eh_par(numero) {
-    return numero % 2 === 0
 }
 
 main()
