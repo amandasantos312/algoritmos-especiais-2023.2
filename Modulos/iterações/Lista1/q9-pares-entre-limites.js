@@ -13,6 +13,6 @@ function main() {
         }
         atual++
     }
-}
+} 
 
 main()
