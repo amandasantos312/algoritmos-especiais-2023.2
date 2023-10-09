@@ -122,8 +122,8 @@ function contar_divisores(num) {
     return contador === 2
 }
 
-function eh_divisor(num, candidato) {
-    return num % candidato === 0
+export function porcentagem(valor, percentual) {
+    return valor * (percentual / 100)
 }
 
 function eh_multiplo(num , candidato) {
