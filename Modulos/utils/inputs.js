@@ -40,4 +40,4 @@ export function enter_to_continue() {
 
 export function dinheiro(valor) {
     return `R$ ${valor.toFixed(2)}`
-}
+} 

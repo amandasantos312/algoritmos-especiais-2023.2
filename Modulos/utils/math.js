@@ -128,4 +128,4 @@ export function porcentagem(valor, percentual) {
 
 function eh_multiplo(num , candidato) {
     return num % candidato === 0
-}
+} 
