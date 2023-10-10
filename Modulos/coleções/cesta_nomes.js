@@ -9,6 +9,7 @@ function main() {
         cesta.push(nome)
     }
 
+    //Verifica cada elemento da cesta e identifica se tamanho do elemento é par ou impar:
     let pares = 0
     let impares = 0
 
