@@ -1,1 +1,0 @@
-/* Escreva um algoritmo para determinar o número de dígitos de um número informado. */
