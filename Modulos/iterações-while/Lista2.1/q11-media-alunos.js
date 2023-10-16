@@ -12,12 +12,18 @@ function main() {
     let nota1
     let nota2
     let nota3
+    let count = 0
     let media_final
-    let aprovado
-    let reprovado
+    let aprovado = 0
+    let reprovado = 0
 
-    while (matricula !== 0) {
+    while (!(matricula === 0)) {
         matricula = get_positive_number('\nMatricula: ')
+
+        if (matricula === 0) {
+            break
+        }
+
         nota1 = get_positive_number('Nota1: ')
         nota2 = get_positive_number('Nota2: ')
         nota3 = get_positive_number('Nota2: ')
@@ -30,11 +36,12 @@ function main() {
             reprovado++
         }
 
-        matricula++
+        count++
     }
 
-    print(matricula)
-    print(aprovado)
-    print(reprovado)
+    print(`\n------> RESULTADO <------`)
+    print(`\nTotal de Alunos: ${count}`)
+    print(`Aprovados: ${aprovado}`)
+    print(`Reprovados: ${reprovado}`)
 }
 main()
