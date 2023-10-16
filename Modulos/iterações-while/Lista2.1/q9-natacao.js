@@ -23,6 +23,9 @@ function main() {
   while (num_prova != 0 && qtd_nadadores != 0) {
     let count = 0
 
+    let num_prova = get_positive_number('\nNum da Prova: ')
+    let qtd_nadadores = get_positive_number('Qtd Nadadores: ')
+
     while (count <= qtd_nadadores) {
       print(`\nNadador ${count + 1}`)
 
@@ -40,8 +43,7 @@ function main() {
       }
       count++
     }
-    let num_prova = get_positive_number('\nNum da Prova: ')
-    let qtd_nadadores = get_positive_number('Qtd Nadadores: ')
+    
   }
     print(`>>> Pontuações dos Clubes <<<`)
     print(`Clube A: ${points_club_a}`)
