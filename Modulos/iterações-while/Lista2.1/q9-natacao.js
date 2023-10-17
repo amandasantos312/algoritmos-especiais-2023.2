@@ -17,17 +17,14 @@ function main() {
   let num_prova = get_positive_number('\nNum da Prova: ')
   let qtd_nadadores = get_positive_number('Qtd Nadadores: ')
 
-  let points_club_a
-  let points_club_b
+  let points_club_a = 0
+  let points_club_b = 0
 
   while (num_prova != 0 && qtd_nadadores != 0) {
-    let count = 0
-
-    let num_prova = get_positive_number('\nNum da Prova: ')
-    let qtd_nadadores = get_positive_number('Qtd Nadadores: ')
+    let count = 1
 
     while (count <= qtd_nadadores) {
-      print(`\nNadador ${count + 1}`)
+      print(`\nNadador ${count}`)
 
       let nome = get_text('Nome: ')
       let classificacao = get_positive_number('Classificacao: ')
@@ -43,14 +40,17 @@ function main() {
       }
       count++
     }
+
+    num_prova = get_positive_number('\nNum da Prova: ')
+    qtd_nadadores = get_positive_number('Qtd de Nadadores: ')
     
   }
-    print(`>>> Pontuações dos Clubes <<<`)
+    print(`\n>>> Pontuações dos Clubes <<<`)
     print(`Clube A: ${points_club_a}`)
     print(`Clube B: ${points_club_b}`)
 
     let ganhador = verificar_ganhador(points_club_a, points_club_b)
-    print(`>>> Clube Campeão: ${ganhador}`)
+    print(`\n>>> Clube Campeão: ${ganhador}`)
 }
 
 function calcular_points(classificacao) {
