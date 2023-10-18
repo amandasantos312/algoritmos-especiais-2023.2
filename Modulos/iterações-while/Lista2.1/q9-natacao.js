@@ -20,7 +20,7 @@ function main() {
   let points_club_a = 0
   let points_club_b = 0
 
-  while (num_prova != 0 && qtd_nadadores != 0) {
+  while (num_prova != 0 || qtd_nadadores != 0) {
     let count = 1
 
     while (count <= qtd_nadadores) {
