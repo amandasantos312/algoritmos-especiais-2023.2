@@ -96,7 +96,7 @@ export function is_prime(num) {
         }
         candidate++
     }
-    return contar_divisores == 2  //Para ser primo o número deve ter somente dois divisores, o 1 e o próprio número
+    return count_dividers == 2  //Para ser primo o número deve ter somente dois divisores, o 1 e o próprio número
 }
 
 export function eh_primo(num) {
@@ -126,6 +126,10 @@ export function porcentagem(valor, percentual) {
     return valor * (percentual / 100)
 }
 
-function eh_multiplo(num , candidato) {
+export function percentual_de_total(valor, total) {
+    return (valor / total) * 100
+}
+
+export function eh_multiplo(num , candidato) {
     return num % candidato === 0
 } 

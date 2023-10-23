@@ -18,7 +18,7 @@ export function get_number_min(label, minimo) {
 }
 
 export function get_positive_number(label) {
-    return get_number_min(label, 1)
+    return get_number_min(label, 0)
 }
 
 export function print(texto) {
