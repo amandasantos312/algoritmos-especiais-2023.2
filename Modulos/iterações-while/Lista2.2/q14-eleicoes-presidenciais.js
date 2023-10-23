@@ -60,7 +60,7 @@ function main() {
     print(`Nulos/Brancos: ${perc_nulos_brancos.toFixed(1)}%`)
     print(`Outros: ${perc_outros.toFixed(1)}%`)
     print(`-------------------------`)
-    print(`Total de Entrevistados: ${count-1}`)
+    print(`Total de Entrevistados: ${qtd_votos}`)
 }
 
 function menu() {

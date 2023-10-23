@@ -12,20 +12,24 @@ function main() {
     while (salario !== 0) {
         let salario_reajustado
 
-        if (salario <= 2.999) {
+        if (salario <= 2999.99) {
             salario_reajustado = calcular_reajuste(salario, 0.25)
-        } else if (salario <= 5.999) {
+            print(`Salario Reajustado: ${salario_reajustado}`)
+        } else if (salario <= 5999.99) {
             salario_reajustado = calcular_reajuste(salario, 0.20)
-        } else if (salario <= 9.999) {
+            print(`Salario Reajustado: ${salario_reajustado}`)
+        } else if (salario <= 9999.99) {
             salario_reajustado = calcular_reajuste(salario, 0.15)
+            print(`Salario Reajustado: ${salario_reajustado}`)
         } else { //>= 10000
             salario_reajustado = calcular_reajuste(salario, 0.10)
+            print(`Salario Reajustado: ${salario_reajustado}`)
         }
 
         soma_salarios_atuais += salario
         soma_salarios_reajustados += salario_reajustado
 
-        salario = get_positive_number('Salario: ')
+        salario = get_positive_number('\nSalario: ')
     } 
     
     const diferenca = soma_salarios_reajustados - soma_salarios_atuais
@@ -36,7 +40,7 @@ function main() {
 }
 
 function calcular_reajuste(salario, valor) {
-    return salario + (salario * valor)
+    return (salario * valor) + salario
 }
 
 main()
