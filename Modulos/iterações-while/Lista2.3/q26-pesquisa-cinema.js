@@ -13,33 +13,39 @@ function main() {
     let nota 
     
     let count = 0
-    let soma_idades = 0
-    let votos_otimos = 0
-    let votos_regulares = 0
+    let soma_idades_otimo = 0
+    let count_otimo = 0
+    let votos_bom = 0
+    let votos_regular = 0
 
     while (idade !== (-1)) {
 
         idade = get_number('\nIdade: ')
         nota = get_number('Nota(1/2/3/4): ')
 
-        soma_idades = soma_idades + idade
 
         if (nota === 1) {
-            votos_otimos++
+            soma_idades_otimo = soma_idades_otimo + idade
+            count_otimo++
         }
+
+        if (nota === 2) {
+            votos_bom++
+        }
+
         if (nota === 3) {
-            votos_regulares++
+            votos_regular++
         }
 
         count++
     }
-    const media_idades = soma_idades / count
-    const perc_otimo = percentual_de_total(votos_otimos, count)
+    const media_idades = soma_idades_otimo / count_otimo
+    const perc_bom = percentual_de_total(votos_bom, count)
 
     print(`\n
     Qtd: ${count-1}
     Media Das Idades: ${media_idades.toFixed(1)}
-    Qtd Votos Regular: ${votos_regulares}
-    Percentual de Votos Otimo: ${perc_otimo.toFixed(1)}%`)
+    Qtd Votos Regular: ${votos_regular}
+    Percentual de Votos Otimo: ${perc_bom.toFixed(1)}%`)
 }
 main()
