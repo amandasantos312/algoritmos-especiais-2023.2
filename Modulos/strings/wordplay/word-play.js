@@ -1,5 +1,5 @@
 import { readFileSync } from "fs"
-import { enter_to_continue, get_number, print } from "../../utils/inputs.js"
+import { enter_to_continue, get_number, print, solta_linha } from "../../utils/inputs.js"
 
 function main() {
     const palavras = load_palavras()
@@ -7,8 +7,11 @@ function main() {
 
     while (opcao != 0) {
         if (opcao === 1) {
-            print(`\n`)
+            solta_linha()
             mostar_palavras_20_caracteres(palavras)
+        } else if (opcao === 2) {
+            solta_linha()
+            mostar_palavras_sem_letra_e(palavras)
         }
 
         enter_to_continue
@@ -44,8 +47,20 @@ function mostar_palavras_20_caracteres(palavras) {
     }
 }
 
-function palavras_sem_e() {
-    
+function mostar_palavras_sem_letra_e(palavras) {
+    for (let palavra of palavras) {
+        if(palavra(nao_contem_e)) {
+            return palavra
+        }
+    }
+}
+
+function nao_contem_e(palavra) {
+    //let 
+
+    for(let i = 0; i < palavra.length; i++) {
+        
+    }
 }
 
 main()

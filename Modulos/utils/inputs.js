@@ -40,4 +40,8 @@ export function enter_to_continue() {
 
 export function dinheiro(valor) {
     return `R$ ${valor.toFixed(2)}`
-} 
+}
+
+export function solta_linha() {
+    return print('\n')
+}
