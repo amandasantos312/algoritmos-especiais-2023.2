@@ -42,6 +42,6 @@ export function dinheiro(valor) {
     return `R$ ${valor.toFixed(2)}`
 }
 
-export function solta_linha() {
+export function skip_line() {
     return print('\n')
 }
