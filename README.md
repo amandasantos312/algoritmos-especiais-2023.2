@@ -7,7 +7,6 @@ Iniciei esse repositório utilizando o IntelliJ para os códigos em java, e depo
 O workspace contém as seguintes pastas de interesse:
 ### IntelliJ:
 - `src`: é a principal que possui a pasta operadores com os respectivos códigos;
-- `out`: contém os arquivos **.class** da pasta **src**.
 
 ### VSCode:
 - `Módulos`: códigos a partir da listafábio2.
