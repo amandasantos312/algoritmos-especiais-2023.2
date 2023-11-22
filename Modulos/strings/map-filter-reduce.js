@@ -1,4 +1,4 @@
-import {get_number, get_positive_number, print} from "../../utils/inputs.js"
+import { get_number, get_positive_number, print } from "../utils/inputs.js"
 
 function main() {
     // const qtd = get_positive_number('\nTamanho: ')
@@ -74,7 +74,7 @@ function mostrar_colecao(vetor) {
     print(`>>>>> ${vetor.length} itens <<<<<`)
 }
 
-function filtrar(vetor, criterio) {
+export function filtrar(vetor, criterio) {
     const cesta = []
 
     for (let item of vetor) {
@@ -101,7 +101,7 @@ function eh_impar(numero) {
     return !eh_par(numero)
 }
 
-function mapear(vetor, conversor) {
+export function mapear(vetor, conversor) {
     const cesta = []
 
     for (let item of vetor) {

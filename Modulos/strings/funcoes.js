@@ -1,4 +1,4 @@
-import { print } from "../../utils/inputs.js"
+import { print } from "../utils/inputs.js"
 
 function main() {
     executor(saudacao, 'Amanda')
