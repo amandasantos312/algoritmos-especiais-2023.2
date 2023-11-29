@@ -3,3 +3,6 @@
 *.iml
 .vscode
 bin
+*.json
+*node_modules/
+.package-lock.json
