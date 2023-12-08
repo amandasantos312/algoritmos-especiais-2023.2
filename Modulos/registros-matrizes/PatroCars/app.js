@@ -1,3 +1,9 @@
+/* FALTA TERMINAR/AJEITAR:
+Gravar - a
+Filtar/Ordenar das 3 - f
+Toda as funcoes de V3 - f 
+*/
+
 import { ulid } from 'ulid'
 import { enter_to_continue, print, get_number_min, get_text, skip_line } from './utils.js'
 import { iniciar_dados, obter_index, verificar_opcao, bubble_sort, gravar_dados_montadoras, gravar_dados_modelos } from './app-utils.js'
